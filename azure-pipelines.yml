@@ -22,6 +22,6 @@ steps:
     goals: 'package'
 - task: Go@0
   inputs:
-    command: 'build'
-    arguments: '--flags=02'
-    workingDirectory: 'build'
+    command: 'custom'
+    customCommand: 'go version'
+
